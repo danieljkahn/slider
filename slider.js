@@ -21,8 +21,8 @@ class Slider {
 			document.body.addEventListener('keydown', function(event){self.prevSlide(self,event)}, false);
 
 			window.addEventListener('resize', function() { // on browser resize
-				this.resizedSlideHeight = this.slides[this.currentSlide].clientHeight; // get current slide height
-				this.slider.style.height = this.resizedSlideHeight + 'px'; // update the height of the slider
+				self.resizedSlideHeight = self.slides[self.currentSlide].clientHeight; // get current slide height
+				self.slider.style.height = self.resizedSlideHeight + 'px'; // update the height of the slider
 			});
 
 			if (autobool) {

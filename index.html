@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vanilla SliderJS</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="slider.css">
+	<script type="text/javascript" src="slider.js"></script>
+</head>
+<body>
+	<main id="wrapper">
+		<section class="hero">
+  	    <div class="slider-wrap">
+          <div class="slider">
+            <div class="slide-entry">
+              <div class="slide-content">
+                <h2>Slide One</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id repudiandae magnam amet architecto, aliquam unde, fugit in optio, vitae natus debitis minima tempore adipisci placeat<br><br> esse quasi ullam incidunt a et sit suscipit, impedit nobis. Quos qui doloribus necessitatibus perspiciatis, aliquid obcaecati rerum ad sequi animi facilis at iusto optio!</p>
+              </div>
+            </div>
+            <div class="slide-entry">
+              <div class="slide-content">
+                <h2>Video Slide</h2>
+    						<div class="embed-container">
+      						<iframe width="560" height="315" src="https://www.youtube.com/embed/SgLJj3a-41Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide-entry">
+              <div class="slide-content">
+                <h2>Mixed Content</h2>
+                 <img style="float:right" src="https://via.placeholder.com/350x150" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id repudiandae magnam amet architecto, aliquam unde, fugit in optio, vitae natus debitis minima tempore adipisci placeat esse quasi ullam incidunt a et sit suscipit, impedit nobis.</p>
+              </div>
+            </div>
+          </div>
+          <i id="prev-slide" class="slide-nav">«</i>
+  			  <i id="next-slide" class="slide-nav">»</i>
+        </div>
+  		</section>
+	</main>
+	<script type="text/javascript">
+		let sliderWrap = document.querySelector('.slider-wrap');
+		let autoplay = true;
+		let newSlider = new Slider(sliderWrap, autoplay);
+	</script>
+</body>
+</html>
